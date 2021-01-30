@@ -2,6 +2,8 @@ package com.mm.eit.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.List;
+
 import com.mm.eit.types.Currency;
 import lombok.*;
 
@@ -27,7 +29,7 @@ public class Account {
     @Column
     private BigDecimal balance;
     @Column
-    @OneToMany(mappedBy = "record", fetch = FetchType.LAZY,
+    @OneToMany(mappedBy = "id", fetch = FetchType.LAZY,
             cascade = CascadeType.ALL)
-    private Record record;
+    private List<Record> records;
 }

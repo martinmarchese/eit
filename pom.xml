@@ -11,7 +11,7 @@
 	<groupId>com.mm</groupId>
 	<artifactId>eit</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>eit</name>
 	<description>Personal Expense and Investments Tracker</description>
 	<properties>
