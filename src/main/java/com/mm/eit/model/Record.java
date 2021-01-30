@@ -20,6 +20,9 @@ public class Record {
     @Column
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+    @ManyToOne
+    @JoinColumn(nullable = false)
+    private Account account;
     @Column
     private RecordType type;
     @Column
