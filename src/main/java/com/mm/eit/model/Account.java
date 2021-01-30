@@ -2,6 +2,8 @@ package com.mm.eit.model;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
+import java.util.Set;
+
 import com.mm.eit.types.Currency;
 import lombok.*;
 
@@ -29,5 +31,5 @@ public class Account {
     @Column
     @OneToMany(mappedBy = "record", fetch = FetchType.LAZY,
             cascade = CascadeType.ALL)
-    private Record record;
+    private Set<Record> records;
 }
