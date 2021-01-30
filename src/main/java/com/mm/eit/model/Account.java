@@ -1,11 +1,14 @@
 package com.mm.eit.model;
 
-import javax.persistence.*;
+
 import java.math.BigDecimal;
 import java.util.List;
 
 import com.mm.eit.types.Currency;
 import lombok.*;
+
+import javax.persistence.*;
+
 
 @Entity
 @Table

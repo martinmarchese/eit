@@ -56,6 +56,8 @@ public class AccountController {
                     .save(Account.builder()
                             .name(account.getName())
                             .description(account.getDescription())
+                            .balance(account.getBalance())
+                            .currency(account.getCurrency())
                             .build());
             return new ResponseEntity<>(_account, HttpStatus.CREATED);
         } catch (Exception e) {

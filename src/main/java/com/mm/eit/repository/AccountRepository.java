@@ -3,7 +3,6 @@ package com.mm.eit.repository;
 import java.util.List;
 
 import com.mm.eit.model.Account;
-import com.mm.eit.types.Currency;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AccountRepository extends JpaRepository<Account, Long> {
